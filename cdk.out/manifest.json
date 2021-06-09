@@ -1,0 +1,306 @@
+{
+  "version": "12.0.0",
+  "artifacts": {
+    "Tree": {
+      "type": "cdk:tree",
+      "properties": {
+        "file": "tree.json"
+      }
+    },
+    "MyStack": {
+      "type": "aws:cloudformation:stack",
+      "environment": "aws://unknown-account/unknown-region",
+      "properties": {
+        "templateFile": "MyStack.template.json",
+        "validateOnSynth": false
+      },
+      "metadata": {
+        "/MyStack": [
+          {
+            "type": "aws:cdk:asset",
+            "data": {
+              "path": "asset.91983f53eff8228528504631ea088fb748d797c41b9117601e9b1ed390057a51",
+              "id": "91983f53eff8228528504631ea088fb748d797c41b9117601e9b1ed390057a51",
+              "packaging": "zip",
+              "sourceHash": "91983f53eff8228528504631ea088fb748d797c41b9117601e9b1ed390057a51",
+              "s3BucketParameter": "AssetParameters91983f53eff8228528504631ea088fb748d797c41b9117601e9b1ed390057a51S3Bucket04532EFD",
+              "s3KeyParameter": "AssetParameters91983f53eff8228528504631ea088fb748d797c41b9117601e9b1ed390057a51S3VersionKey31A698BA",
+              "artifactHashParameter": "AssetParameters91983f53eff8228528504631ea088fb748d797c41b9117601e9b1ed390057a51ArtifactHash3BD16BF0"
+            },
+            "trace": [
+              "ConstructNode.addMetadata (/Users/jakedecrane/repos/jake-cdk-sample-lib/node_modules/@aws-cdk/core/lib/construct-compat.js:405:62)",
+              "LegacyStackSynthesizer.doAddFileAsset (/Users/jakedecrane/repos/jake-cdk-sample-lib/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.js:175:29)",
+              "LegacyStackSynthesizer.addFileAsset (/Users/jakedecrane/repos/jake-cdk-sample-lib/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.js:83:25)",
+              "Stack.addFileAsset (/Users/jakedecrane/repos/jake-cdk-sample-lib/node_modules/@aws-cdk/core/lib/stack.js:410:33)",
+              "LegacyStackSynthesizer.addFileAsset (/Users/jakedecrane/repos/jake-cdk-sample-lib/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.js:87:31)",
+              "new Asset (/Users/jakedecrane/repos/jake-cdk-sample-lib/node_modules/@aws-cdk/aws-s3-assets/lib/asset.js:40:44)",
+              "AssetCode.bind (/Users/jakedecrane/repos/jake-cdk-sample-lib/node_modules/@aws-cdk/aws-lambda/lib/code.js:258:26)",
+              "new Function (/Users/jakedecrane/repos/jake-cdk-sample-lib/node_modules/@aws-cdk/aws-lambda/lib/function.js:97:33)",
+              "new CdkSampleLib (/Users/jakedecrane/repos/jake-cdk-sample-lib/lib/index.js:19:25)",
+              "Object.<anonymous> (/Users/jakedecrane/repos/jake-cdk-sample-lib/lib/integ.default.js:7:1)",
+              "Module._compile (node:internal/modules/cjs/loader:1092:14)",
+              "Object.Module._extensions..js (node:internal/modules/cjs/loader:1121:10)",
+              "Module.load (node:internal/modules/cjs/loader:972:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:813:14)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:76:12)",
+              "node:internal/main/run_main_module:17:47"
+            ]
+          }
+        ],
+        "/MyStack/Cdk-Sample-Lib/HelloWorld/ServiceRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CdkSampleLibHelloWorldServiceRole47245453",
+            "trace": [
+              "new Role (/Users/jakedecrane/repos/jake-cdk-sample-lib/node_modules/@aws-cdk/aws-iam/lib/role.js:72:22)",
+              "new Function (/Users/jakedecrane/repos/jake-cdk-sample-lib/node_modules/@aws-cdk/aws-lambda/lib/function.js:79:35)",
+              "new CdkSampleLib (/Users/jakedecrane/repos/jake-cdk-sample-lib/lib/index.js:19:25)",
+              "Object.<anonymous> (/Users/jakedecrane/repos/jake-cdk-sample-lib/lib/integ.default.js:7:1)",
+              "Module._compile (node:internal/modules/cjs/loader:1092:14)",
+              "Object.Module._extensions..js (node:internal/modules/cjs/loader:1121:10)",
+              "Module.load (node:internal/modules/cjs/loader:972:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:813:14)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:76:12)",
+              "node:internal/main/run_main_module:17:47"
+            ]
+          }
+        ],
+        "/MyStack/Cdk-Sample-Lib/HelloWorld/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CdkSampleLibHelloWorldBD0A3465",
+            "trace": [
+              "new Function (/Users/jakedecrane/repos/jake-cdk-sample-lib/node_modules/@aws-cdk/aws-lambda/lib/function.js:135:26)",
+              "new CdkSampleLib (/Users/jakedecrane/repos/jake-cdk-sample-lib/lib/index.js:19:25)",
+              "Object.<anonymous> (/Users/jakedecrane/repos/jake-cdk-sample-lib/lib/integ.default.js:7:1)",
+              "Module._compile (node:internal/modules/cjs/loader:1092:14)",
+              "Object.Module._extensions..js (node:internal/modules/cjs/loader:1121:10)",
+              "Module.load (node:internal/modules/cjs/loader:972:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:813:14)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:76:12)",
+              "node:internal/main/run_main_module:17:47"
+            ]
+          }
+        ],
+        "/MyStack/Cdk-Sample-Lib/API/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CdkSampleLibAPI6FD5D6E6",
+            "trace": [
+              "new HttpApi (/Users/jakedecrane/repos/jake-cdk-sample-lib/node_modules/@aws-cdk/aws-apigatewayv2/lib/http/api.js:157:26)",
+              "new CdkSampleLib (/Users/jakedecrane/repos/jake-cdk-sample-lib/lib/index.js:24:21)",
+              "Object.<anonymous> (/Users/jakedecrane/repos/jake-cdk-sample-lib/lib/integ.default.js:7:1)",
+              "Module._compile (node:internal/modules/cjs/loader:1092:14)",
+              "Object.Module._extensions..js (node:internal/modules/cjs/loader:1121:10)",
+              "Module.load (node:internal/modules/cjs/loader:972:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:813:14)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:76:12)",
+              "node:internal/main/run_main_module:17:47"
+            ]
+          }
+        ],
+        "/MyStack/Cdk-Sample-Lib/API/DefaultRoute/MyStackCdkSampleLibAPIDefaultRouteA2B7E7C3-Permission": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CdkSampleLibAPIDefaultRouteMyStackCdkSampleLibAPIDefaultRouteA2B7E7C3PermissionF417E879",
+            "trace": [
+              "Function.addPermission (/Users/jakedecrane/repos/jake-cdk-sample-lib/node_modules/@aws-cdk/aws-lambda/lib/function-base.js:42:9)",
+              "LambdaProxyIntegration.bind (/Users/jakedecrane/repos/jake-cdk-sample-lib/node_modules/@aws-cdk/aws-apigatewayv2-integrations/lib/http/lambda.js:29:28)",
+              "new HttpRoute (/Users/jakedecrane/repos/jake-cdk-sample-lib/node_modules/@aws-cdk/aws-apigatewayv2/lib/http/route.js:86:42)",
+              "new HttpApi (/Users/jakedecrane/repos/jake-cdk-sample-lib/node_modules/@aws-cdk/aws-apigatewayv2/lib/http/api.js:164:13)",
+              "new CdkSampleLib (/Users/jakedecrane/repos/jake-cdk-sample-lib/lib/index.js:24:21)",
+              "Object.<anonymous> (/Users/jakedecrane/repos/jake-cdk-sample-lib/lib/integ.default.js:7:1)",
+              "Module._compile (node:internal/modules/cjs/loader:1092:14)",
+              "Object.Module._extensions..js (node:internal/modules/cjs/loader:1121:10)",
+              "Module.load (node:internal/modules/cjs/loader:972:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:813:14)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:76:12)",
+              "node:internal/main/run_main_module:17:47"
+            ]
+          }
+        ],
+        "/MyStack/Cdk-Sample-Lib/API/DefaultRoute/HttpIntegration-5312ebb799bfe30ac603c6feaa0d134e/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CdkSampleLibAPIDefaultRouteHttpIntegration5312ebb799bfe30ac603c6feaa0d134e1873FA2A",
+            "trace": [
+              "new HttpIntegration (/Users/jakedecrane/repos/jake-cdk-sample-lib/node_modules/@aws-cdk/aws-apigatewayv2/lib/http/integration.js:77:23)",
+              "HttpApi._addIntegration (/Users/jakedecrane/repos/jake-cdk-sample-lib/node_modules/@aws-cdk/aws-apigatewayv2/lib/http/api.js:106:29)",
+              "new HttpRoute (/Users/jakedecrane/repos/jake-cdk-sample-lib/node_modules/@aws-cdk/aws-apigatewayv2/lib/http/route.js:90:43)",
+              "new HttpApi (/Users/jakedecrane/repos/jake-cdk-sample-lib/node_modules/@aws-cdk/aws-apigatewayv2/lib/http/api.js:164:13)",
+              "new CdkSampleLib (/Users/jakedecrane/repos/jake-cdk-sample-lib/lib/index.js:24:21)",
+              "Object.<anonymous> (/Users/jakedecrane/repos/jake-cdk-sample-lib/lib/integ.default.js:7:1)",
+              "Module._compile (node:internal/modules/cjs/loader:1092:14)",
+              "Object.Module._extensions..js (node:internal/modules/cjs/loader:1121:10)",
+              "Module.load (node:internal/modules/cjs/loader:972:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:813:14)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:76:12)",
+              "node:internal/main/run_main_module:17:47"
+            ]
+          }
+        ],
+        "/MyStack/Cdk-Sample-Lib/API/DefaultRoute/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CdkSampleLibAPIDefaultRouteECF6CA84",
+            "trace": [
+              "new HttpRoute (/Users/jakedecrane/repos/jake-cdk-sample-lib/node_modules/@aws-cdk/aws-apigatewayv2/lib/http/route.js:116:23)",
+              "new HttpApi (/Users/jakedecrane/repos/jake-cdk-sample-lib/node_modules/@aws-cdk/aws-apigatewayv2/lib/http/api.js:164:13)",
+              "new CdkSampleLib (/Users/jakedecrane/repos/jake-cdk-sample-lib/lib/index.js:24:21)",
+              "Object.<anonymous> (/Users/jakedecrane/repos/jake-cdk-sample-lib/lib/integ.default.js:7:1)",
+              "Module._compile (node:internal/modules/cjs/loader:1092:14)",
+              "Object.Module._extensions..js (node:internal/modules/cjs/loader:1121:10)",
+              "Module.load (node:internal/modules/cjs/loader:972:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:813:14)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:76:12)",
+              "node:internal/main/run_main_module:17:47"
+            ]
+          }
+        ],
+        "/MyStack/Cdk-Sample-Lib/API/DefaultStage/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CdkSampleLibAPIDefaultStage53EE2902",
+            "trace": [
+              "new HttpStage (/Users/jakedecrane/repos/jake-cdk-sample-lib/node_modules/@aws-cdk/aws-apigatewayv2/lib/http/stage.js:76:9)",
+              "new HttpApi (/Users/jakedecrane/repos/jake-cdk-sample-lib/node_modules/@aws-cdk/aws-apigatewayv2/lib/http/api.js:173:33)",
+              "new CdkSampleLib (/Users/jakedecrane/repos/jake-cdk-sample-lib/lib/index.js:24:21)",
+              "Object.<anonymous> (/Users/jakedecrane/repos/jake-cdk-sample-lib/lib/integ.default.js:7:1)",
+              "Module._compile (node:internal/modules/cjs/loader:1092:14)",
+              "Object.Module._extensions..js (node:internal/modules/cjs/loader:1121:10)",
+              "Module.load (node:internal/modules/cjs/loader:972:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:813:14)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:76:12)",
+              "node:internal/main/run_main_module:17:47"
+            ]
+          }
+        ],
+        "/MyStack/Cdk-Sample-Lib/ApiURL": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CdkSampleLibApiURL32C6192A",
+            "trace": [
+              "new CdkSampleLib (/Users/jakedecrane/repos/jake-cdk-sample-lib/lib/index.js:27:9)",
+              "Object.<anonymous> (/Users/jakedecrane/repos/jake-cdk-sample-lib/lib/integ.default.js:7:1)",
+              "Module._compile (node:internal/modules/cjs/loader:1092:14)",
+              "Object.Module._extensions..js (node:internal/modules/cjs/loader:1121:10)",
+              "Module.load (node:internal/modules/cjs/loader:972:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:813:14)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:76:12)",
+              "node:internal/main/run_main_module:17:47"
+            ]
+          }
+        ],
+        "/MyStack/AssetParameters/91983f53eff8228528504631ea088fb748d797c41b9117601e9b1ed390057a51/S3Bucket": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "AssetParameters91983f53eff8228528504631ea088fb748d797c41b9117601e9b1ed390057a51S3Bucket04532EFD",
+            "trace": [
+              "new FileAssetParameters (/Users/jakedecrane/repos/jake-cdk-sample-lib/node_modules/@aws-cdk/core/lib/private/asset-parameters.js:12:36)",
+              "LegacyStackSynthesizer.doAddFileAsset (/Users/jakedecrane/repos/jake-cdk-sample-lib/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.js:162:22)",
+              "LegacyStackSynthesizer.addFileAsset (/Users/jakedecrane/repos/jake-cdk-sample-lib/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.js:83:25)",
+              "Stack.addFileAsset (/Users/jakedecrane/repos/jake-cdk-sample-lib/node_modules/@aws-cdk/core/lib/stack.js:410:33)",
+              "LegacyStackSynthesizer.addFileAsset (/Users/jakedecrane/repos/jake-cdk-sample-lib/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.js:87:31)",
+              "new Asset (/Users/jakedecrane/repos/jake-cdk-sample-lib/node_modules/@aws-cdk/aws-s3-assets/lib/asset.js:40:44)",
+              "AssetCode.bind (/Users/jakedecrane/repos/jake-cdk-sample-lib/node_modules/@aws-cdk/aws-lambda/lib/code.js:258:26)",
+              "new Function (/Users/jakedecrane/repos/jake-cdk-sample-lib/node_modules/@aws-cdk/aws-lambda/lib/function.js:97:33)",
+              "new CdkSampleLib (/Users/jakedecrane/repos/jake-cdk-sample-lib/lib/index.js:19:25)",
+              "Object.<anonymous> (/Users/jakedecrane/repos/jake-cdk-sample-lib/lib/integ.default.js:7:1)",
+              "Module._compile (node:internal/modules/cjs/loader:1092:14)",
+              "Object.Module._extensions..js (node:internal/modules/cjs/loader:1121:10)",
+              "Module.load (node:internal/modules/cjs/loader:972:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:813:14)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:76:12)",
+              "node:internal/main/run_main_module:17:47"
+            ]
+          }
+        ],
+        "/MyStack/AssetParameters/91983f53eff8228528504631ea088fb748d797c41b9117601e9b1ed390057a51/S3VersionKey": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "AssetParameters91983f53eff8228528504631ea088fb748d797c41b9117601e9b1ed390057a51S3VersionKey31A698BA",
+            "trace": [
+              "new FileAssetParameters (/Users/jakedecrane/repos/jake-cdk-sample-lib/node_modules/@aws-cdk/core/lib/private/asset-parameters.js:16:35)",
+              "LegacyStackSynthesizer.doAddFileAsset (/Users/jakedecrane/repos/jake-cdk-sample-lib/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.js:162:22)",
+              "LegacyStackSynthesizer.addFileAsset (/Users/jakedecrane/repos/jake-cdk-sample-lib/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.js:83:25)",
+              "Stack.addFileAsset (/Users/jakedecrane/repos/jake-cdk-sample-lib/node_modules/@aws-cdk/core/lib/stack.js:410:33)",
+              "LegacyStackSynthesizer.addFileAsset (/Users/jakedecrane/repos/jake-cdk-sample-lib/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.js:87:31)",
+              "new Asset (/Users/jakedecrane/repos/jake-cdk-sample-lib/node_modules/@aws-cdk/aws-s3-assets/lib/asset.js:40:44)",
+              "AssetCode.bind (/Users/jakedecrane/repos/jake-cdk-sample-lib/node_modules/@aws-cdk/aws-lambda/lib/code.js:258:26)",
+              "new Function (/Users/jakedecrane/repos/jake-cdk-sample-lib/node_modules/@aws-cdk/aws-lambda/lib/function.js:97:33)",
+              "new CdkSampleLib (/Users/jakedecrane/repos/jake-cdk-sample-lib/lib/index.js:19:25)",
+              "Object.<anonymous> (/Users/jakedecrane/repos/jake-cdk-sample-lib/lib/integ.default.js:7:1)",
+              "Module._compile (node:internal/modules/cjs/loader:1092:14)",
+              "Object.Module._extensions..js (node:internal/modules/cjs/loader:1121:10)",
+              "Module.load (node:internal/modules/cjs/loader:972:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:813:14)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:76:12)",
+              "node:internal/main/run_main_module:17:47"
+            ]
+          }
+        ],
+        "/MyStack/AssetParameters/91983f53eff8228528504631ea088fb748d797c41b9117601e9b1ed390057a51/ArtifactHash": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "AssetParameters91983f53eff8228528504631ea088fb748d797c41b9117601e9b1ed390057a51ArtifactHash3BD16BF0",
+            "trace": [
+              "new FileAssetParameters (/Users/jakedecrane/repos/jake-cdk-sample-lib/node_modules/@aws-cdk/core/lib/private/asset-parameters.js:20:38)",
+              "LegacyStackSynthesizer.doAddFileAsset (/Users/jakedecrane/repos/jake-cdk-sample-lib/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.js:162:22)",
+              "LegacyStackSynthesizer.addFileAsset (/Users/jakedecrane/repos/jake-cdk-sample-lib/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.js:83:25)",
+              "Stack.addFileAsset (/Users/jakedecrane/repos/jake-cdk-sample-lib/node_modules/@aws-cdk/core/lib/stack.js:410:33)",
+              "LegacyStackSynthesizer.addFileAsset (/Users/jakedecrane/repos/jake-cdk-sample-lib/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.js:87:31)",
+              "new Asset (/Users/jakedecrane/repos/jake-cdk-sample-lib/node_modules/@aws-cdk/aws-s3-assets/lib/asset.js:40:44)",
+              "AssetCode.bind (/Users/jakedecrane/repos/jake-cdk-sample-lib/node_modules/@aws-cdk/aws-lambda/lib/code.js:258:26)",
+              "new Function (/Users/jakedecrane/repos/jake-cdk-sample-lib/node_modules/@aws-cdk/aws-lambda/lib/function.js:97:33)",
+              "new CdkSampleLib (/Users/jakedecrane/repos/jake-cdk-sample-lib/lib/index.js:19:25)",
+              "Object.<anonymous> (/Users/jakedecrane/repos/jake-cdk-sample-lib/lib/integ.default.js:7:1)",
+              "Module._compile (node:internal/modules/cjs/loader:1092:14)",
+              "Object.Module._extensions..js (node:internal/modules/cjs/loader:1121:10)",
+              "Module.load (node:internal/modules/cjs/loader:972:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:813:14)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:76:12)",
+              "node:internal/main/run_main_module:17:47"
+            ]
+          }
+        ],
+        "/MyStack/CDKMetadata/Default": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CDKMetadata",
+            "trace": [
+              "new MetadataResource (/Users/jakedecrane/repos/jake-cdk-sample-lib/node_modules/@aws-cdk/core/lib/private/metadata-resource.js:22:30)",
+              "/Users/jakedecrane/repos/jake-cdk-sample-lib/node_modules/@aws-cdk/core/lib/private/synthesis.js:128:9",
+              "visit (/Users/jakedecrane/repos/jake-cdk-sample-lib/node_modules/@aws-cdk/core/lib/private/synthesis.js:185:9)",
+              "visit (/Users/jakedecrane/repos/jake-cdk-sample-lib/node_modules/@aws-cdk/core/lib/private/synthesis.js:182:9)",
+              "injectMetadataResources (/Users/jakedecrane/repos/jake-cdk-sample-lib/node_modules/@aws-cdk/core/lib/private/synthesis.js:117:5)",
+              "Object.synthesize (/Users/jakedecrane/repos/jake-cdk-sample-lib/node_modules/@aws-cdk/core/lib/private/synthesis.js:17:5)",
+              "App.synth (/Users/jakedecrane/repos/jake-cdk-sample-lib/node_modules/@aws-cdk/core/lib/stage.js:100:41)",
+              "process.<anonymous> (/Users/jakedecrane/repos/jake-cdk-sample-lib/node_modules/@aws-cdk/core/lib/app.js:50:51)",
+              "Object.onceWrapper (node:events:476:26)",
+              "process.emit (node:events:369:20)"
+            ]
+          }
+        ],
+        "/MyStack/CDKMetadata/Condition": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CDKMetadataAvailable",
+            "trace": [
+              "new MetadataResource (/Users/jakedecrane/repos/jake-cdk-sample-lib/node_modules/@aws-cdk/core/lib/private/metadata-resource.js:30:35)",
+              "/Users/jakedecrane/repos/jake-cdk-sample-lib/node_modules/@aws-cdk/core/lib/private/synthesis.js:128:9",
+              "visit (/Users/jakedecrane/repos/jake-cdk-sample-lib/node_modules/@aws-cdk/core/lib/private/synthesis.js:185:9)",
+              "visit (/Users/jakedecrane/repos/jake-cdk-sample-lib/node_modules/@aws-cdk/core/lib/private/synthesis.js:182:9)",
+              "injectMetadataResources (/Users/jakedecrane/repos/jake-cdk-sample-lib/node_modules/@aws-cdk/core/lib/private/synthesis.js:117:5)",
+              "Object.synthesize (/Users/jakedecrane/repos/jake-cdk-sample-lib/node_modules/@aws-cdk/core/lib/private/synthesis.js:17:5)",
+              "App.synth (/Users/jakedecrane/repos/jake-cdk-sample-lib/node_modules/@aws-cdk/core/lib/stage.js:100:41)",
+              "process.<anonymous> (/Users/jakedecrane/repos/jake-cdk-sample-lib/node_modules/@aws-cdk/core/lib/app.js:50:51)",
+              "Object.onceWrapper (node:events:476:26)",
+              "process.emit (node:events:369:20)"
+            ]
+          }
+        ]
+      },
+      "displayName": "MyStack"
+    }
+  }
+}
